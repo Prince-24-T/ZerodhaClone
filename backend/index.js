@@ -196,6 +196,9 @@ app.use("/", autoRoutes);
 //   });
 // });
 
+app.get("/", (req, res, next) => {
+  res.send("backend is  started");
+});
 app.get("/allHolding", async (req, res) => {
   let allHolding = await HoldingModel.find();
 
