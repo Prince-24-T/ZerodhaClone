@@ -7,9 +7,11 @@ const Positions = () => {
   const [allPosition, setPosition] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/allPosition").then((res) => {
-      setPosition(res.data);
-    });
+    axios
+      .get("https://zerodhaclone-3pfm.onrender.com/allPosition")
+      .then((res) => {
+        setPosition(res.data);
+      });
   }, []);
   return (
     <>

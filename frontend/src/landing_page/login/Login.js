@@ -31,7 +31,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/login",
+        "https://zerodhaclone-3pfm.onrender.com/login",
         { ...inputValue },
         { withCredentials: true }
       );
@@ -41,7 +41,7 @@ const Login = () => {
         handleSuccess(message);
         setTimeout(() => {
           // navigate("/home");
-          window.location.href = "http://localhost:3001";
+          window.location.href = "http://localhost:3000";
         }, 1000);
       } else {
         handleError(message);

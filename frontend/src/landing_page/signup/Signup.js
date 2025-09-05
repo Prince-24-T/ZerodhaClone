@@ -32,7 +32,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/signup",
+        "https://zerodhaclone-3pfm.onrender.com/signup",
         { ...inputValue },
         { withCredentials: true }
       );
@@ -42,7 +42,7 @@ const Signup = () => {
         handleSuccess(message);
         setTimeout(() => {
           // navigate("/home");
-          window.location.href = "http://localhost:3001";
+          window.location.href = "http://localhost:3000";
         }, 1000);
       } else {
         handleError(message);
