@@ -28,9 +28,9 @@ function Navbar() {
             <ul class="navbar-nav mb-lg-0">
               <li class="nav-item">
                 <Link style={{ textDecoration: "none" }} to="/signup">
-                  <a class="nav-link active" aria-current="page" href="#">
+                  <span class="nav-link active" aria-current="page" href="#">
                     Signup
-                  </a>
+                  </span>
                 </Link>
 
                 {/* <a class="nav-link active" aria-current="page" href="#">
@@ -39,38 +39,38 @@ function Navbar() {
               </li>
               <li class="nav-item">
                 <Link style={{ textDecoration: "none" }} to="/about">
-                  <a class="nav-link active" href="#">
+                  <span class="nav-link active" href="#">
                     About
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li class="nav-item">
                 <Link style={{ textDecoration: "none" }} to="/product">
-                  <a class="nav-link active" href="#">
+                  <span class="nav-link active" href="#">
                     Product
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li class="nav-item">
                 <Link style={{ textDecoration: "none" }} to="/pricing">
-                  <a class="nav-link active" href="#">
+                  <span class="nav-link active" href="#">
                     Pricing
-                  </a>
+                  </span>
                 </Link>
               </li>
               <li class="nav-item">
                 <Link style={{ textDecoration: "none" }} to="/support">
-                  <a class="nav-link active" href="#">
+                  <span class="nav-link active" href="#">
                     Support
-                  </a>
+                  </span>
                 </Link>
               </li>
 
               <li class="nav-item">
                 <Link style={{ textDecoration: "none" }} to="/login">
-                  <a class="nav-link active" href="#">
+                  <span class="nav-link active" href="#">
                     login
-                  </a>
+                  </span>
                 </Link>
               </li>
             </ul>

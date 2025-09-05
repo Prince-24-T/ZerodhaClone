@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Team() {
   return (
@@ -32,8 +33,23 @@ function Team() {
           </p>
           <p>Playing basketball is his zen.</p>
           <p>
-            Connect on <a href="">Homepage</a> / <a href="">TradingQnA</a> /{" "}
-            <a href="">Twitter</a>
+            Connect on{" "}
+            <Link to="/" style={{ textDecoration: "none" }}>
+              Homepage
+            </Link>{" "}
+            /{" "}
+            <Link to="/tradingqna" style={{ textDecoration: "none" }}>
+              TradingQnA
+            </Link>{" "}
+            / // External link (Twitter)
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
+            >
+              Twitter
+            </a>
           </p>
         </div>
       </div>

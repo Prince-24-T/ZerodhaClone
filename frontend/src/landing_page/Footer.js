@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -6,50 +7,88 @@ function Footer() {
       <div className="container border-top mt-5">
         <div className="row mt-5">
           <div className="col">
-            <img src="/images/logo.svg" style={{ width: "50%" }} />
+            <img
+              src="/images/logo.svg"
+              alt="Zerodha Logo"
+              style={{ width: "50%" }}
+            />
             <p>
               &copy; 2010 - 2024, Not Zerodha Broking Ltd. All rights reserved.
             </p>
           </div>
           <div className="col">
             <p>Company</p>
-            <a href="">About</a>
+            <Link to="/about">
+              <span>About</span>
+            </Link>
             <br />
-            <a href="">Products</a>
+            <Link to="product">
+              <span>Products</span>
+            </Link>
             <br />
-            <a href="">Pricing</a>
+            <Link>
+              <span>Pricing</span>
+            </Link>
+
             <br />
-            <a href="">Referral programme</a>
+            <Link>
+              <span>Referral programme</span>
+            </Link>
             <br />
-            <a href="">Careers</a>
+            <Link>
+              <span>Careers</span>
+            </Link>
             <br />
-            <a href="">Zerodha.tech</a>
+            <Link>
+              <span>Zerodha.tech</span>
+            </Link>
             <br />
-            <a href="">Press & media</a>
+            <Link>
+              <span>Press & media</span>
+            </Link>
             <br />
-            <a href="">Zerodha cares (CSR)</a>
+            <Link>
+              <span>Zerodha cares (CSR)</span>
+            </Link>
             <br />
           </div>
           <div className="col">
             <p>Support</p>
-            <a href="">Contact</a>
+            <Link>
+              <span>Contact</span>
+            </Link>
             <br />
-            <a href="">Support portal</a>
+            <Link>
+              <span>Support portal</span>
+            </Link>
             <br />
-            <a href="">Z-Connect blog</a>
+            <Link>
+              <span>Z-Connect blog</span>
+            </Link>
             <br />
-            <a href="">List of charges</a>
+            <Link>
+              <span>List of charges</span>
+            </Link>
             <br />
-            <a href="">Downloads & resources</a>
+            <Link>
+              <span>Downloads & resources</span>
+            </Link>
             <br />
           </div>
           <div className="col">
             <p>Account</p>
-            <a href="">Open an account</a>
+            <Link>
+              <span>Open an account</span>
+            </Link>
             <br />
-            <a href="">Fund transfer</a>
+            <Link>
+              <span>Fund transfer</span>
+            </Link>
+
             <br />
-            <a href="">60 day challenge</a>
+            <Link>
+              <span>60 day challenge</span>
+            </Link>
             <br />
           </div>
         </div>
