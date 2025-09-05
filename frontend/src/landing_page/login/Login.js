@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 
 const Login = () => {
-  const navigate = useNavigate();
-
   const [inputValue, setInputValue] = useState({
     username: "",
     password: "",
@@ -41,7 +39,7 @@ const Login = () => {
         handleSuccess(message);
         setTimeout(() => {
           // navigate("/home");
-          window.location.href = "http://localhost:3000";
+          window.location.href = "https://zerodha01.netlify.app/";
         }, 1000);
       } else {
         handleError(message);
