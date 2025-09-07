@@ -39,7 +39,7 @@ const Login = () => {
         handleSuccess(message);
         setTimeout(() => {
           // navigate("/home");
-          window.location.href = "https://zerodha01.netlify.app/";
+          window.location.href = "https://dashb0.netlify.app/";
         }, 1000);
       } else {
         handleError(message);
