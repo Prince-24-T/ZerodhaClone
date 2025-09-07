@@ -17,7 +17,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:3001"],
+    origin: ["http://localhost:3000", "http://localhost:3001", "*"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
@@ -243,5 +243,4 @@ app.listen(port, () => {
     .catch((err) => {
       console.log(err);
     });
-  console.log("mongo is connected");
 });
