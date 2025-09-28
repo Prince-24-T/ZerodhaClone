@@ -16,9 +16,11 @@ module.exports.Signup = async (req, res, next) => {
       secure: true, // required for HTTPS
       sameSite: "none", // allow cross-site cookie
     });
-    res
-      .status(201)
-      .json({ message: "User signed in successfully", success: true, user });
+    res.status(201).json({
+      message: "User signed in successfully",
+      success: true,
+      user: { id: user._id, email: user.email, username: user.username },
+    });
   } catch (error) {
     console.error(error);
   }
@@ -31,11 +33,11 @@ module.exports.Login = async (req, res, next) => {
     }
     const user = await User.findOne({ email });
     if (!user) {
-      return res.json({ message: "Incorrect password or email" });
+      return res.json({ message: "Incorrect email" });
     }
     const auth = await bcrypt.compare(password, user.password);
     if (!auth) {
-      return res.json({ message: "Incorrect password or email" });
+      return res.json({ message: "Incorrect password " });
     }
     const token = createSecretToken(user._id);
     res.cookie("token", token, {
@@ -46,7 +48,6 @@ module.exports.Login = async (req, res, next) => {
     res
       .status(201)
       .json({ message: "User logged in successfully", success: true });
-    next();
   } catch (error) {
     console.error(error);
   }
