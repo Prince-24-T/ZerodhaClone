@@ -20,7 +20,7 @@ app.use(
     origin: [
       "http://localhost:3000",
       "http://localhost:3001",
-      "https://zerodha01.netlify.app",
+      "https://zerodh01.netlify.app",
       "https://dashb0.netlify.app",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
